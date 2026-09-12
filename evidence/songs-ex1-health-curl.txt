@@ -1,0 +1,10 @@
+$ curl -X GET -i -w '\n' localhost:5000/health
+HTTP/1.1 200 OK
+Server: Werkzeug/2.2.2 Python/3.13.13
+Date: Sat, 12 Sep 2026 17:02:52 GMT
+Content-Type: application/json
+Content-Length: 16
+Connection: close
+
+{"status":"OK"}
+

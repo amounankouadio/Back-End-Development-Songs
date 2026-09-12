@@ -1,0 +1,10 @@
+$ curl --request GET -i -w '\n' --url http://localhost:5000/song/1
+HTTP/1.1 200 OK
+Server: Werkzeug/2.2.2 Python/3.13.13
+Date: Sat, 12 Sep 2026 17:02:53 GMT
+Content-Type: application/json
+Content-Length: 256
+Connection: close
+
+{"_id":{"$oid":"6aa585acba2ae2f7b6abcfb0"},"id":1,"lyrics":"Morbi non lectus. Aliquam sit amet diam in magna bibendum imperdiet. Nullam orci pede, venenatis non, sodales sed, tincidunt eu, felis.","title":"duis faucibus accumsan odio curabitur convallis"}
+

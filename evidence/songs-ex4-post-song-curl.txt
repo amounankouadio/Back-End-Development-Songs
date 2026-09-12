@@ -1,0 +1,21 @@
+$ curl --request POST -i -w '\n' --url http://localhost:5000/song --header 'Content-Type: application/json' --data '{ "id": 323, ... }'
+HTTP/1.1 201 CREATED
+Server: Werkzeug/2.2.2 Python/3.13.13
+Date: Sat, 12 Sep 2026 17:03:07 GMT
+Content-Type: application/json
+Content-Length: 52
+Connection: close
+
+{"inserted id":{"$oid":"6aa585cbc0a2d20dbc96fd8c"}}
+
+
+$ (same command again)
+HTTP/1.1 302 FOUND
+Server: Werkzeug/2.2.2 Python/3.13.13
+Date: Sat, 12 Sep 2026 17:03:07 GMT
+Content-Type: application/json
+Content-Length: 47
+Connection: close
+
+{"Message":"song with id 323 already present"}
+

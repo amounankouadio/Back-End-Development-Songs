@@ -1,0 +1,10 @@
+$ curl --request GET -i -w '\n' --url http://localhost:5000/song
+HTTP/1.1 200 OK
+Server: Werkzeug/2.2.2 Python/3.13.13
+Date: Sat, 12 Sep 2026 17:02:53 GMT
+Content-Type: application/json
+Content-Length: 6694
+Connection: close
+
+{"songs":[{"_id":{"$oid":"6aa585acba2ae2f7b6abcfb0"},"id":1,"lyrics":"Morbi non lectus. Aliquam sit amet diam in magna bibendum imperdiet. Nullam orci pede, venenatis non, sodales sed, tincidunt eu, felis.","title":"duis faucibus accumsan odio curabitur convallis"},{"_id":{"$oid":"6aa585acba2ae2f7b6abcfb1"},"id":2,"lyrics":"Suspendisse potenti. In eleifend quam a odio. In hac habitasse platea dictumst.\n\nMaecenas ut massa quis augue luctus tincidunt. Nulla mollis molestie lorem. Quisque ut erat.","title":"dictumst etiam faucibus cursus urna ut"},{"_id":{"$oid":"6aa585acba2ae2f7b6abcfb2"},"id":3,"lyrics":"Integer tincidunt ante vel ipsum. Praesent blandit lacinia erat. Vestibulum sed magna at nunc commodo placerat.\n\nPraesent blandit. Nam nulla. Integer pede justo, lacinia eget, tincidunt eget, tempus vel, pede.","title":"in faucibus orci luctus et ultrices"},{"_id":{"$oid":"6aa585acba2ae2f7b6abcfb3"},"id":4,"lyrics":"Aliquam quis turpis eget elit sodales scelerisque. Mauris sit amet eros. Suspendisse accumsan torto
+...

@@ -1,0 +1,21 @@
+$ curl --request PUT -i -w '\n' --url http://localhost:5000/song/1 --header 'Content-Type: application/json' --data '{ "lyrics": "yay hey yay yay", "title": "yay song" }'
+HTTP/1.1 201 CREATED
+Server: Werkzeug/2.2.2 Python/3.13.13
+Date: Sat, 12 Sep 2026 17:03:07 GMT
+Content-Type: application/json
+Content-Length: 97
+Connection: close
+
+{"_id":{"$oid":"6aa585acba2ae2f7b6abcfb0"},"id":1,"lyrics":"yay hey yay yay","title":"yay song"}
+
+
+$ (same command again)
+HTTP/1.1 200 OK
+Server: Werkzeug/2.2.2 Python/3.13.13
+Date: Sat, 12 Sep 2026 17:03:08 GMT
+Content-Type: application/json
+Content-Length: 46
+Connection: close
+
+{"message":"song found, but nothing updated"}
+
